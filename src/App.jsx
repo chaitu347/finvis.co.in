@@ -4,8 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './components/Home'
 import AboutUs from './components/AboutUS'
-import WhyChooseUs from './components/whyChooseUs'  
-
+import WhyChooseUs from './components/WhyChooseUss'
+import HowItWorks from './components/HowItsWork'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,6 +14,7 @@ function App() {
       <Home/>
       <AboutUs/>
       <WhyChooseUs/>
+      <HowItWorks/>
     </>
   )
 }

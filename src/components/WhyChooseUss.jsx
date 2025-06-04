@@ -1,7 +1,7 @@
 import React from 'react';
 import { Shield, Users, Trophy, Clock, CheckCircle, Star, Phone, FileText } from 'lucide-react';
 
-const WhyChooseUs = () => {
+const WhyChooseUss = () => {
   const reasons = [
     {
       icon: <Shield className="w-10 h-10 sm:w-12 sm:h-12" />,
@@ -155,4 +155,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export default WhyChooseUss;
