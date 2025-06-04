@@ -32,7 +32,7 @@ const Home = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">
-                <span className="text-amber-400">Legal</span>Excellence
+                <span className="text-amber-400">Finvisco</span>Associates
               </h1>
             </div>
 
