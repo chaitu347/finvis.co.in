@@ -93,16 +93,19 @@ const Header =()    => {
             <div>
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/95 backdrop-blur-sm border-t border-amber-400/20">
                 <a href="#home" className="text-white hover:text-amber-400 block px-3 py-2 text-base font-medium transition-colors duration-300 hover:bg-amber-400/10 rounded-md">
-                  Home
+                  <Link to="/">Home</Link>
                 </a>
                 <a href="#about" className="text-white hover:text-amber-400 block px-3 py-2 text-base font-medium transition-colors duration-300 hover:bg-amber-400/10 rounded-md">
-                  About Us
+                    <Link to="/aboutus">About Us</Link>
                 </a>
                 <a href="#contact" className="text-white hover:text-amber-400 block px-3 py-2 text-base font-medium transition-colors duration-300 hover:bg-amber-400/10 rounded-md">
-                  Contact Us
+                  <Link to="/services">Services</Link>
+                </a>
+                <a href="#contact" className="text-white hover:text-amber-400 block px-3 py-2 text-base font-medium transition-colors duration-300 hover:bg-amber-400/10 rounded-md">
+                  <Link to="/contactus">Contact Us</Link>
                 </a>
                 <button className="w-full bg-amber-400 hover:bg-amber-500 text-black px-3 py-3 mt-3 rounded-md text-base font-medium transition-colors duration-300">
-                  Schedule Consultation
+                   <Link to="/contactus">Schedule Consultation</Link>
                 </button>
               </div>
             </div>
