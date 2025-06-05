@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Scale, Users, Award, Clock, Moon, Sun } from 'lucide-react';
+import Header from './Header';
+
 
 const AboutUs = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -51,6 +53,7 @@ const AboutUs = () => {
 
   return (
     <section id="about" className={`py-12 sm:py-16 lg:py-20 transition-colors duration-500 ${themeClasses.background}`}>
+      <Header/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Theme Toggle */}
         <div className="flex justify-end mb-8">

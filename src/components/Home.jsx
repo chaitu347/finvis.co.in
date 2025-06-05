@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
+import WhyChooseUss from './WhyChooseUss';
+import HowItsWork from './HowItsWork';
+import SocialMedia from './SocialMedia';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 
 
@@ -30,8 +33,10 @@ const Home = () => {
      
      
       {/* Hero Section */}
-      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" >
+        <Header/>
         {/* Background with Justice/Legal Theme */}
+        <div className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           {/* Base gradient */}
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-black"></div>
@@ -107,6 +112,10 @@ const Home = () => {
             <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
+        </div>
+        <WhyChooseUss />
+        <HowItsWork />
+        <SocialMedia />
       </section>
     </div>
   );

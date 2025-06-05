@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home'
 import AboutUs from './components/AboutUS'
 import WhyChooseUs from './components/WhyChooseUss'
@@ -10,20 +9,23 @@ import SocialMedia from './components/SocialMedia'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import ContactUs from './components/ContactUs/ContactUs.jsx'
+import LawyerServicesWebsite from './components/LawyerServicesWebsite.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Header/>
-      <Home/>
-      <AboutUs/>
-      <WhyChooseUs/>
-      <HowItWorks/>
-      <SocialMedia/>
-      <ContactUs/>
-      <Footer/>
-    </>
+    
+  <BrowserRouter>
+     
+     <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/aboutus" element={<AboutUs />} />
+      <Route path="/contactus" element={<ContactUs />} />
+      <Route path="/services" element={<LawyerServicesWebsite />} />
+    </Routes>
+        
+     <Footer/>
+    </BrowserRouter>
   )
 }
 

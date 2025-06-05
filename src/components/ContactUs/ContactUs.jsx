@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import GradientText from './GradientText';
 import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
+import Header from "../Header";
+
 import MobileContactInfo from './MobileContactInfo';
 
 const ContactUs = ({ isActiveSection = true }) => {
@@ -18,6 +20,7 @@ const ContactUs = ({ isActiveSection = true }) => {
   return (
     <section id="contact" className="min-h-screen w-full overflow-hidden relative bg-gray-900">
       {/* Dark sophisticated background */}
+      <Header/>
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
         style={{

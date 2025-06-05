@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { Outlet, Link } from "react-router-dom";
 
 
 
@@ -50,16 +51,25 @@ const Header =()    => {
               <div className="flex">
                 <div className="flex items-center space-x-4 lg:space-x-8">
                   <a href="#home" className="text-white hover:text-amber-400 px-3 py-2 text-sm lg:text-base font-medium transition-colors duration-300 hover:bg-amber-400/10 rounded-md">
-                    Home
+                    <Link to="/">Home</Link>
+
                   </a>
                   <a href="#about" className="text-white hover:text-amber-400 px-3 py-2 text-sm lg:text-base font-medium transition-colors duration-300 hover:bg-amber-400/10 rounded-md">
-                    About Us
+                    <Link to="/aboutus">About Us</Link>
+
+                  </a>
+                  <a href="#services" className="text-white hover:text-amber-400 px-3 py-2 text-sm lg:text-base font-medium transition-colors duration-300 hover:bg-amber-400/10 rounded-md">
+                    <Link to="/services">Services</Link>
+
                   </a>
                   <a href="#contact" className="text-white hover:text-amber-400 px-3 py-2 text-sm lg:text-base font-medium transition-colors duration-300 hover:bg-amber-400/10 rounded-md">
-                    Contact Us
+                    <Link to="/contactus">Contact Us</Link>
+
                   </a>
+                  
                   <button className="bg-amber-400 hover:bg-amber-500 text-black px-4 lg:px-6 py-2 lg:py-3 rounded-md text-sm lg:text-base font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ml-2 lg:ml-4">
-                    Schedule Consultation
+                    
+                    <Link to="/contactus">Schedule Consultation</Link>
                   </button>
                 </div>
               </div>
