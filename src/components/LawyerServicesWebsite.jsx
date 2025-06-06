@@ -965,10 +965,84 @@ const handleMobileNavigation = (sectionId) => {
       {/* Navbar */}
       <nav className="bg-gray-800 border-b border-yellow-500 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link to="/" >
           <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <Scale className="h-8 w-8 text-yellow-400 mr-3" />
-              <span className="text-xl font-bold text-yellow-400"><Link to="/">LegalPro Services</Link></span>
+            <div className="flex-shrink-0">
+              <div className="h-10 w-auto sm:h-12 md:h-14 lg:h-16">
+                <svg 
+                  viewBox="0 0 1200 400" 
+                  className="h-full w-auto" 
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {/* Transparent background for navbar */}
+                  <rect width="1200" height="400" fill="transparent"/>
+                  
+                  {/* Shield with pillar icon */}
+                  <g transform="translate(80, 60)">
+                    <path 
+                      d="M40 20 C40 20, 40 10, 60 10 L160 10 C180 10, 180 20, 180 20 L180 160 C180 180, 160 200, 140 220 L110 250 L80 220 C60 200, 40 180, 40 160 Z" 
+                      fill="none" 
+                      stroke="#fbbf24" 
+                      strokeWidth="12" 
+                      strokeLinejoin="round"
+                    />
+                    
+                    {/* Inner pillar design */}
+                    <g transform="translate(70, 40)">
+                      {/* Top bar */}
+                      <rect x="10" y="10" width="60" height="8" fill="#fbbf24" rx="4"/>
+                      
+                      {/* Pillar columns */}
+                      <rect x="15" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
+                      <rect x="32" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
+                      <rect x="49" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
+                      <rect x="66" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
+                      
+                      {/* Base */}
+                      <rect x="10" y="150" width="60" height="12" fill="#fbbf24" rx="4"/>
+                    </g>
+                  </g>
+                  
+                  {/* FINVIS text */}
+                  <text 
+                    x="320" 
+                    y="180" 
+                    fill="#fbbf24" 
+                    fontSize="120" 
+                    fontWeight="bold" 
+                    fontFamily="Arial, sans-serif" 
+                    letterSpacing="-2px"
+                  >
+                    FINVIS
+                  </text>
+                  
+                  {/* ASSOCIATES text */}
+                  <text 
+                    x="320" 
+                    y="260" 
+                    fill="#fbbf24" 
+                    fontSize="80" 
+                    fontWeight="bold" 
+                    fontFamily="Arial, sans-serif" 
+                    letterSpacing="8px"
+                  >
+                    ASSOCIATES
+                  </text>
+                  
+                  {/* LAW FIRM text */}
+                  <text 
+                    x="320" 
+                    y="320" 
+                    fill="#fbbf24" 
+                    fontSize="48" 
+                    fontWeight="normal" 
+                    fontFamily="Arial, sans-serif" 
+                    letterSpacing="12px"
+                  >
+                    LAW FIRM
+                  </text>
+                </svg>
+              </div>
             </div>
            
                     
@@ -1021,6 +1095,7 @@ const handleMobileNavigation = (sectionId) => {
 </button>
             </div>
           </div>
+          </Link>
 
           {/* Mobile Navigation */}
           {/* Mobile Navigation */}
