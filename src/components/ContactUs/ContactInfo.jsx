@@ -6,14 +6,14 @@ const ContactInfo = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: 'Email',
-      value: 'kundrapubhargav@gmail.com',
-      link: 'mailto:kundrapubhargav@gmail.com'
+      value: 'm.govardhanvarma@gmail.com',
+      link: 'mailto:m.govardhanvarma@gmail.com'
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: 'Phone',
-      value: '+91 9014110638',
-      link: 'tel:+919014110638'
+      value: '+91 9492605274',
+      link: 'tel:+919492605274'
     },
     {
       icon: <MapPin className="w-5 h-5" />,
