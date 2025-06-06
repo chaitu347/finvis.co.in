@@ -1147,12 +1147,14 @@ const handleMobileNavigation = (sectionId) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contactus">
             <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
-              Get Free Consultation
+              Get Consultation
             </button>
             </Link>
+            <Link to="/services">
             <button className="border-2 border-yellow-500 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 hover:text-gray-900 transition-colors">
               View All Services
             </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -1298,7 +1300,7 @@ const handleMobileNavigation = (sectionId) => {
               </p>
               <Link to="/contactus">
               <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-lg">
-                Schedule Free Consultation
+                Schedule Consultation
               </button>
               </Link>
             </div>
