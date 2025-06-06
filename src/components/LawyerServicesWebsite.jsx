@@ -1145,9 +1145,11 @@ const handleMobileNavigation = (sectionId) => {
             Comprehensive legal solutions for individuals and businesses with over 15+ years of experience
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/contactus">
             <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
               Get Free Consultation
             </button>
+            </Link>
             <button className="border-2 border-yellow-500 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 hover:text-gray-900 transition-colors">
               View All Services
             </button>
@@ -1238,10 +1240,12 @@ const handleMobileNavigation = (sectionId) => {
                     </h4>
                     <p className="text-gray-300 mb-4">Contact our experts for personalized consultation and detailed quote</p>
                     <div className="flex flex-col sm:flex-row gap-3">
+                      <Link to="/contactus">
                       <button className="bg-yellow-500 text-gray-900 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors flex items-center justify-center">
                         <Calendar className="h-4 w-4 mr-2" />
                         Book Consultation
                       </button>
+                      </Link>
                       <button className="border border-yellow-500 text-yellow-400 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 hover:text-gray-900 transition-colors flex items-center justify-center">
                         <FileText className="h-4 w-4 mr-2" />
                         Get Quote
@@ -1292,9 +1296,11 @@ const handleMobileNavigation = (sectionId) => {
               <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
                 Get expert legal advice for your specific situation. Our experienced lawyers provide 30-minute free consultations to understand your needs and recommend the best legal solutions.
               </p>
+              <Link to="/contactus">
               <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-lg">
                 Schedule Free Consultation
               </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Scale, Users, Award, Clock, Moon, Sun } from 'lucide-react';
+import { Scale, Users, Award, Clock, Moon, Sun, Link as LinkIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
-
 
 const AboutUs = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -100,9 +100,11 @@ const AboutUs = () => {
               to protecting our clients' rights and interests.
             </p>
             <div className="pt-4">
+              <Link to="/contactus">
               <button className={`${themeClasses.button} px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base`}>
                 Schedule Consultation
               </button>
+              </Link>
             </div>
           </div>
 
@@ -186,9 +188,13 @@ const AboutUs = () => {
           <p className={`text-lg sm:text-xl ${themeClasses.ctaSecondary} mb-6 sm:mb-8 max-w-2xl mx-auto px-4`}>
             Get expert legal advice tailored to your specific situation. Our consultation is confidential and comprehensive.
           </p>
-          <button className={`${themeClasses.button} px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg`}>
-            Schedule Free Consultation
-          </button>
+           <div className="pt-4">
+              <Link to="/contactus">
+              <button className={`${themeClasses.button} px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base`}>
+                Schedule Consultation
+              </button>
+              </Link>
+            </div>
         </div>
       </div>
     </section>

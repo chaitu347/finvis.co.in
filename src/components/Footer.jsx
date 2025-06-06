@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom'; 
 
 const Footer = () => {
   const quickLinks = [
@@ -34,9 +35,11 @@ const Footer = () => {
                 Providing exceptional legal representation with integrity, dedication, and proven results for over 25 years.
               </p>
             </div>
+            <Link to="/contactus">
             <button className="bg-amber-400 hover:bg-amber-500 text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               Schedule Consultation
             </button>
+            </Link>
           </div>
 
           {/* Quick Links */}

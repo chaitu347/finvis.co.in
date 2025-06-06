@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, FileSearch, Users, Scale, CheckCircle, ArrowRight, Calendar, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom'; 
 
 const HowItWorks = () => {
   const steps = [
@@ -155,9 +156,11 @@ const HowItWorks = () => {
                     </div>
                     
                     <div className="pt-4">
+                      <Link to="/contactus">
                       <button className="bg-gradient-to-r from-amber-400 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-black px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base">
                         Schedule Consultation
                       </button>
+                      </Link>
                     </div>
                   </div>
 
@@ -251,10 +254,12 @@ const HowItWorks = () => {
             Take the first step towards resolving your legal matter. Schedule your free consultation today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center items-center max-w-2xl mx-auto">
+            <Link to="/contactus">
             <button className="w-full sm:w-auto bg-black hover:bg-gray-800 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
               <Phone className="w-5 h-5" />
               <span>Schedule Free Consultation</span>
             </button>
+            </Link>
             <button className="w-full sm:w-auto border-2 border-black text-black hover:bg-black hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105">
               Learn About Our Practice Areas
             </button>

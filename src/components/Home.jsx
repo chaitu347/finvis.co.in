@@ -4,6 +4,7 @@ import WhyChooseUss from './WhyChooseUss';
 import HowItsWork from './HowItsWork';
 import SocialMedia from './SocialMedia';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -96,12 +97,16 @@ const Home = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 sm:pt-8">
+              <Link to="/contactus">
               <button className="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Schedule Free Consultation
               </button>
+              </Link >
+              <Link to="/aboutus">
               <button className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105">
                 Learn More About Us
               </button>
+              </Link>
             </div>
           </div>
         </div>

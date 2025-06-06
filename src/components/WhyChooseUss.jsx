@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Users, Trophy, Clock, CheckCircle, Star, Phone, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom'; 
 
 const WhyChooseUss = () => {
   const reasons = [
@@ -113,9 +114,11 @@ const WhyChooseUss = () => {
                 <p className="mb-4 sm:mb-6 text-sm sm:text-base">
                   Get expert legal advice about your case during a comprehensive consultation at no cost.
                 </p>
+                <Link to="/contactus">
                 <button className="bg-black hover:bg-gray-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-300 w-full transform hover:scale-105 shadow-lg">
                   Schedule Consultation
                 </button>
+                </Link>
               </div>
               <div className="bg-gray-700 hover:bg-gray-600 text-white p-6 sm:p-8 rounded-xl transition-all duration-300 border border-gray-600 hover:border-amber-400/50">
                 <div className="flex items-center space-x-4 mb-4">
@@ -142,9 +145,11 @@ const WhyChooseUss = () => {
             Join thousands of satisfied clients who chose Legal Excellence for their legal representation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+            <Link to="/contactus">
             <button className="bg-black hover:bg-gray-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl w-full sm:w-auto">
               Schedule Free Consultation
             </button>
+            </Link>
             <button className="border-2 border-black text-black hover:bg-black hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
               View Our Practice Areas
             </button>

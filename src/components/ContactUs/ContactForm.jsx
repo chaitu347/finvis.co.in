@@ -15,13 +15,11 @@ const ContactForm = () => {
 
   const services = [
     "Corporate Law",
-    "Criminal Defense", 
+    "Litigation", 
     "Family Law",
-    "Personal Injury",
     "Real Estate",
-    "Immigration",
-    "Employment Law",
     "Intellectual Property",
+    "Tax Law",
     "Other"
   ];
 
