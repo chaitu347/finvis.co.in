@@ -65,7 +65,7 @@ const Footer = () => {
               {practiceAreas.map((area, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href=""
                   className="block text-gray-300 hover:text-amber-400 transition-colors duration-300"
                 >
                   {area}
