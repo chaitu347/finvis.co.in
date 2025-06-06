@@ -99,7 +99,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 sm:pt-8">
               <Link to="/contactus">
               <button className="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                Schedule Free Consultation
+                Schedule Consultation
               </button>
               </Link >
               <Link to="/aboutus">

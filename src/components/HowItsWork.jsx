@@ -257,7 +257,7 @@ const HowItWorks = () => {
             <Link to="/contactus">
             <button className="w-full sm:w-auto bg-black hover:bg-gray-800 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
               <Phone className="w-5 h-5" />
-              <span>Schedule Free Consultation</span>
+              <span>Schedule Consultation</span>
             </button>
             </Link>
             <button className="w-full sm:w-auto border-2 border-black text-black hover:bg-black hover:text-white px-6 md:px-8 py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105">
