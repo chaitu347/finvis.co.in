@@ -107,7 +107,7 @@ const WhyChooseUss = () => {
                 <div className="flex items-center space-x-4 mb-4">
                   <Phone className="w-6 h-6 sm:w-8 sm:h-8" />
                   <div>
-                    <h4 className="text-lg sm:text-xl font-bold">Free Consultation</h4>
+                    <h4 className="text-lg sm:text-xl font-bold">For Consultation</h4>
                     <p className="text-xs sm:text-sm">No obligation, completely confidential</p>
                   </div>
                 </div>
