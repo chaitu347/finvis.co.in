@@ -73,7 +73,7 @@ const Home = () => {
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="space-y-6 sm:space-y-8">
             {/* Main Quote */}
-            <div className="space-y-4 sm:space-y-6">
+            <div className="pt-18 space-y-4 sm:space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
                 <span className="text-amber-400">"Justice</span> is the constant and 
                 <br className="hidden sm:block" />

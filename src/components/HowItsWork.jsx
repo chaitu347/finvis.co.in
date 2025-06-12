@@ -154,14 +154,7 @@ const HowItWorks = () => {
                         </div>
                       ))}
                     </div>
-                    
-                    <div className="pt-4">
-                      <Link to="/contactus">
-                      <button className="bg-gradient-to-r from-amber-400 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-black px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base">
-                        Schedule Consultation
-                      </button>
-                      </Link>
-                    </div>
+           
                   </div>
 
                   {/* Visual */}

@@ -80,10 +80,10 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                <div className="text-gray-300">
-                  <p>123 Legal Street</p>
-                  <p>Justice City, JC 12345</p>
-                </div>
+                <a href="https://maps.google.com/?q=17.4851,78.4056" className="text-gray-300 hover:text-amber-400 transition-colors duration-300">
+                  17.4851° N, 78.4056° E
+                </a>
+                
               </div>
               
               <div className="flex items-center space-x-3">

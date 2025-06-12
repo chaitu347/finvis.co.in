@@ -23,6 +23,12 @@ const ContactInfo = () => {
     }
   ];
 
+  // Test function to check if clicks are working
+  const testClick = (label, link) => {
+    console.log(`Clicked ${label}: ${link}`);
+    alert(`Trying to open: ${label} - ${link}`);
+  };
+
   return (
     <div className="absolute bottom-8 right-8 z-10 hidden lg:block">
       <div className="flex flex-col gap-4 bg-gray-900/90 backdrop-blur-lg border border-amber-400/30 rounded-2xl p-6 shadow-2xl min-w-[280px] hover:-translate-y-2 transition-all duration-300">
@@ -39,11 +45,16 @@ const ContactInfo = () => {
               <span className="text-xs font-semibold text-amber-400 uppercase tracking-wider block mb-1">
                 {item.label}
               </span>
-              <a 
+              <a
                 href={item.link}
                 target={item.label === 'Location' ? '_blank' : '_self'}
                 rel={item.label === 'Location' ? 'noopener noreferrer' : ''}
                 className="text-white hover:text-amber-300 transition-colors duration-300 text-sm font-medium leading-tight block"
+                style={{ textDecoration: 'none' }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  testClick(item.label, item.link);
+                }}
               >
                 {item.value}
               </a>

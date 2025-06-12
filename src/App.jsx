@@ -10,12 +10,15 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import ContactUs from './components/ContactUs/ContactUs.jsx'
 import LawyerServicesWebsite from './components/LawyerServicesWebsite.jsx'
+import ScrollToTop from './components/Scrolltotop.jsx';
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     
   <BrowserRouter>
+  <ScrollToTop />
      
      <Routes>
       <Route path="/" element={<Home />} />

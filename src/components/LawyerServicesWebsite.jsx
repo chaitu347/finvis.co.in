@@ -1234,26 +1234,6 @@ const handleMobileNavigation = (sectionId) => {
                       ))}
                     </ul>
                   </div>
-
-                  <div className="p-6 bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 rounded-lg border border-yellow-500/30">
-                    <h4 className="text-lg font-semibold text-yellow-400 mb-2 flex items-center">
-                      <Phone className="h-5 w-5 mr-2" />
-                      Ready to Get Started?
-                    </h4>
-                    <p className="text-gray-300 mb-4">Contact our experts for personalized consultation and detailed quote</p>
-                    <div className="flex flex-col sm:flex-row gap-3">
-                      <Link to="/contactus">
-                      <button className="bg-yellow-500 text-gray-900 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors flex items-center justify-center">
-                        <Calendar className="h-4 w-4 mr-2" />
-                        Book Consultation
-                      </button>
-                      </Link>
-                      <button className="border border-yellow-500 text-yellow-400 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 hover:text-gray-900 transition-colors flex items-center justify-center">
-                        <FileText className="h-4 w-4 mr-2" />
-                        Get Quote
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1261,54 +1241,7 @@ const handleMobileNavigation = (sectionId) => {
         ))}
       </div>
 
-      {/* Contact Section */}
-      <section className="bg-gray-800 border-t border-yellow-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-yellow-400 mb-4">Get in Touch</h2>
-            <p className="text-gray-300 text-lg">Ready to discuss your legal needs? Contact us today for expert consultation</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center p-6 bg-gray-900 rounded-lg border border-yellow-500/30 hover:border-yellow-500 transition-colors">
-              <Phone className="h-8 w-8 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">Call Us</h3>
-              <p className="text-gray-300 mb-2">+91 98765 43210</p>
-              <p className="text-sm text-gray-400">Mon-Sat: 9:00 AM - 7:00 PM</p>
-            </div>
-
-            <div className="text-center p-6 bg-gray-900 rounded-lg border border-yellow-500/30 hover:border-yellow-500 transition-colors">
-              <Mail className="h-8 w-8 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">Email Us</h3>
-              <p className="text-gray-300 mb-2">info@legalpro.com</p>
-              <p className="text-sm text-gray-400">Quick response within 2 hours</p>
-            </div>
-
-            <div className="text-center p-6 bg-gray-900 rounded-lg border border-yellow-500/30 hover:border-yellow-500 transition-colors">
-              <MapPin className="h-8 w-8 text-yellow-400 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">Visit Us</h3>
-              <p className="text-gray-300 mb-2">123 Legal Street, Business District</p>
-              <p className="text-sm text-gray-400">Free parking available</p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <div className="bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 rounded-lg border border-yellow-500/30 p-8">
-              <h3 className="text-2xl font-bold text-yellow-400 mb-4">Free Initial Consultation</h3>
-              <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                Get expert legal advice for your specific situation. Our experienced lawyers provide 30-minute free consultations to understand your needs and recommend the best legal solutions.
-              </p>
-              <Link to="/contactus">
-              <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-lg">
-                Schedule Consultation
-              </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
+   
       
     </div>
   );

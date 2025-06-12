@@ -74,14 +74,8 @@ const SocialMedia = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center">
-          <Link to="/contactus">
-          <button className="bg-amber-400 hover:bg-amber-500 text-black px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-            Schedule Consultation
-          </button>
-          </Link>
-        </div>
+      
+       
       </div>
     </section>
   );
