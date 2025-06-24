@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Outlet, Link } from "react-router-dom";
 import { ChevronDown, Scale, Building, Users, Heart, Briefcase, FileText, Shield, Gavel, Home, Phone, Mail, MapPin, Clock, CheckCircle, Star, Award, Calendar, DollarSign, BookOpen, Target } from 'lucide-react';
 
 const LawyerServicesWebsite = () => {
@@ -965,6 +966,10 @@ const LawyerServicesWebsite = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex-shrink-0">
+              <Link 
+                                      to="/" 
+                                      
+                                    >
               <div className="h-10 w-auto sm:h-12 md:h-14 lg:h-16">
                 <svg 
                   viewBox="0 0 1200 400" 
@@ -1029,6 +1034,7 @@ const LawyerServicesWebsite = () => {
                   </text>
                 </svg>
               </div>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
@@ -1126,14 +1132,17 @@ const LawyerServicesWebsite = () => {
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Comprehensive legal solutions for individuals and businesses with over 15+ years of experience
           </p>
+          <Link 
+                                      to="/contactus" 
+                                      
+                                    >
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
               Get Consultation
             </button>
-            <button className="border-2 border-yellow-500 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 hover:text-gray-900 transition-colors">
-              View All Services
-            </button>
+            
           </div>
+          </Link>
         </div>
       </section>
 
@@ -1169,6 +1178,7 @@ const LawyerServicesWebsite = () => {
                     </div>
                     <p className="text-white font-semibold">{details.timeline}</p>
                   </div>
+                  
                 </div>
 
                 <div>
@@ -1202,6 +1212,17 @@ const LawyerServicesWebsite = () => {
                         </li>
                       ))}
                     </ul>
+                  <Link 
+                                      to="/contactus" 
+                                      
+                                    >
+                    <div className="flex flex-col sm:flex-row gap-4 justify-start">
+            <button className="bg-yellow-500 mt-5 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+              Get Consultation
+            </button>
+            
+          </div>
+          </Link>
                   </div>
                 </div>
               </div>

@@ -46,7 +46,7 @@ const ContactUs = ({ isActiveSection = true }) => {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
         <div className={`text-center mb-12 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <GradientText className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
+          <GradientText className="text-4xl sm:text-5xl mt-8 lg:text-6xl font-extrabold mb-4">
             CONTACT US
           </GradientText>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">

@@ -29,6 +29,10 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 lg:h-20">
             {/* Logo */}
+            <Link 
+                                                  to="/" 
+                                                  
+                                                >
             <div className="flex-shrink-0">
               <div className="h-10 w-auto sm:h-12 md:h-14 lg:h-16">
                 <svg 
@@ -106,6 +110,7 @@ const Header = () => {
                 </svg>
               </div>
             </div>
+            </Link>
 
             {/* Desktop Navigation - Visible for screens >= 800px */}
             {windowWidth >= 800 && (
