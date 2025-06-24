@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Scale, Building, Users, Heart, Briefcase, FileText, Shield, Gavel, Home, Phone, Mail, MapPin, Clock, CheckCircle, Star, Award, Calendar, DollarSign, BookOpen, Target } from 'lucide-react';
-import { Outlet, Link } from "react-router-dom";
+
 const LawyerServicesWebsite = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Add this line
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -92,7 +92,6 @@ const LawyerServicesWebsite = () => {
   ];
 
   const serviceDetails = {
-    // Corporate Law Services
     'company-registration': {
       title: 'Company Registration',
       description: 'Comprehensive company registration services for all business types including Private Limited Companies, Limited Liability Partnerships (LLP), One Person Companies (OPC), and Partnership firms. We handle the entire registration process from name reservation to certificate issuance.',
@@ -111,7 +110,6 @@ const LawyerServicesWebsite = () => {
         'Certificate Issuance & Delivery',
         'Post-Registration Support & Guidance'
       ],
-      pricing: 'Starting from ₹5,999',
       timeline: '7-15 business days',
       benefits: [
         'Limited Liability Protection',
@@ -139,7 +137,6 @@ const LawyerServicesWebsite = () => {
         'Revision & Finalization',
         'Legal Compliance Check'
       ],
-      pricing: 'Starting from ₹2,999',
       timeline: '3-7 business days',
       benefits: [
         'Legal Protection & Compliance',
@@ -943,29 +940,29 @@ const LawyerServicesWebsite = () => {
         'Peace of Mind'
       ]
     }
+    // Add other service details here...
   };
 
   const scrollToSection = (sectionId) => {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-  setActiveDropdown(null); // This closes all dropdowns
-};
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setActiveDropdown(null);
+  };
 
-// Add this new function for mobile navigation
-const handleMobileNavigation = (sectionId) => {
-  scrollToSection(sectionId);
-  setActiveDropdown(null); // Close service dropdown
-  setMobileMenuOpen(false); // Close mobile menu - Add this line
-};
+  const handleMobileNavigation = (sectionId) => {
+    scrollToSection(sectionId);
+    setActiveDropdown(null);
+    setMobileMenuOpen(false);
+  };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white"> 
+      
       {/* Navbar */}
       <nav className="bg-gray-800 border-b border-yellow-500 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/" >
           <div className="flex justify-between h-16">
             <div className="flex-shrink-0">
               <div className="h-10 w-auto sm:h-12 md:h-14 lg:h-16">
@@ -974,10 +971,8 @@ const handleMobileNavigation = (sectionId) => {
                   className="h-full w-auto" 
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  {/* Transparent background for navbar */}
                   <rect width="1200" height="400" fill="transparent"/>
                   
-                  {/* Shield with pillar icon */}
                   <g transform="translate(80, 60)">
                     <path 
                       d="M40 20 C40 20, 40 10, 60 10 L160 10 C180 10, 180 20, 180 20 L180 160 C180 180, 160 200, 140 220 L110 250 L80 220 C60 200, 40 180, 40 160 Z" 
@@ -987,23 +982,16 @@ const handleMobileNavigation = (sectionId) => {
                       strokeLinejoin="round"
                     />
                     
-                    {/* Inner pillar design */}
                     <g transform="translate(70, 40)">
-                      {/* Top bar */}
                       <rect x="10" y="10" width="60" height="8" fill="#fbbf24" rx="4"/>
-                      
-                      {/* Pillar columns */}
                       <rect x="15" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
                       <rect x="32" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
                       <rect x="49" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
                       <rect x="66" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
-                      
-                      {/* Base */}
                       <rect x="10" y="150" width="60" height="12" fill="#fbbf24" rx="4"/>
                     </g>
                   </g>
                   
-                  {/* FINVIS text */}
                   <text 
                     x="320" 
                     y="180" 
@@ -1016,7 +1004,6 @@ const handleMobileNavigation = (sectionId) => {
                     FINVIS
                   </text>
                   
-                  {/* ASSOCIATES text */}
                   <text 
                     x="320" 
                     y="260" 
@@ -1029,7 +1016,6 @@ const handleMobileNavigation = (sectionId) => {
                     ASSOCIATES
                   </text>
                   
-                  {/* LAW FIRM text */}
                   <text 
                     x="320" 
                     y="320" 
@@ -1044,18 +1030,16 @@ const handleMobileNavigation = (sectionId) => {
                 </svg>
               </div>
             </div>
-           
-                    
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
               {services.map((service) => (
-               <div
-  key={service.id}
-  className="relative group"
-  onMouseEnter={() => setActiveDropdown(service.id)}
-  onMouseLeave={() => setActiveDropdown(null)}
->
+                <div
+                  key={service.id}
+                  className="relative group"
+                  onMouseEnter={() => setActiveDropdown(service.id)}
+                  onMouseLeave={() => setActiveDropdown(null)}
+                >
                   <button className="flex items-center px-3 py-2 text-sm font-medium text-white hover:text-yellow-400 transition-colors">
                     <service.icon className="h-4 w-4 mr-1" />
                     {service.title}
@@ -1063,20 +1047,20 @@ const handleMobileNavigation = (sectionId) => {
                   </button>
                   
                   {activeDropdown === service.id && (
-  <div className="absolute top-full left-0 w-64 bg-gray-800 border border-yellow-500 rounded-lg shadow-xl z-50">
-    <div className="py-2 grid grid-cols-1 gap-1">
-      {service.subServices.map((subService) => (
-        <button
-          key={subService.id}
-          onClick={() => scrollToSection(subService.id)}
-          className="block w-full text-left px-4 py-3 text-sm text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors rounded-md mx-1"
-        >
-          {subService.name}
-        </button>
-      ))}
-    </div>
-  </div>
-)}
+                    <div className="absolute top-full left-0 w-64 bg-gray-800 border border-yellow-500 rounded-lg shadow-xl z-50">
+                      <div className="py-2 grid grid-cols-1 gap-1">
+                        {service.subServices.map((subService) => (
+                          <button
+                            key={subService.id}
+                            onClick={() => scrollToSection(subService.id)}
+                            className="block w-full text-left px-4 py-3 text-sm text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors rounded-md mx-1"
+                          >
+                            {subService.name}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -1084,54 +1068,52 @@ const handleMobileNavigation = (sectionId) => {
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center">
               <button
-  onClick={() => setMobileMenuOpen(!mobileMenuOpen)} // Change this line
-  className="text-white hover:text-yellow-400"
->
-  <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-    <div className={`h-0.5 bg-current transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-1' : ''}`}></div> {/* Change this */}
-    <div className={`h-0.5 bg-current transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></div> {/* Change this */}
-    <div className={`h-0.5 bg-current transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-1' : ''}`}></div> {/* Change this */}
-  </div>
-</button>
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="text-white hover:text-yellow-400"
+              >
+                <div className="w-6 h-6 flex flex-col justify-center space-y-1">
+                  <div className={`h-0.5 bg-current transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-1' : ''}`}></div>
+                  <div className={`h-0.5 bg-current transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
+                  <div className={`h-0.5 bg-current transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-1' : ''}`}></div>
+                </div>
+              </button>
             </div>
           </div>
-          </Link>
 
           {/* Mobile Navigation */}
-          {/* Mobile Navigation */}
-{mobileMenuOpen && ( // Change this line
-  <div className="md:hidden border-t border-yellow-500">
-    <div className="py-4 space-y-2">
-      {services.map((service) => (
-        <div key={service.id}>
-          <button
-            onClick={() => setActiveDropdown(activeDropdown === service.id ? null : service.id)}
-            className="flex items-center justify-between w-full px-4 py-2 text-left text-white hover:text-yellow-400 hover:bg-gray-700 rounded-md transition-colors" // Add hover styles
-          >
-            <div className="flex items-center">
-              <service.icon className="h-4 w-4 mr-2" />
-              {service.title}
-            </div>
-            <ChevronDown className={`h-4 w-4 transition-transform ${activeDropdown === service.id ? 'rotate-180' : ''}`} />
-          </button>
-          {activeDropdown === service.id && (
-            <div className="pl-8 space-y-1">
-              {service.subServices.map((subService) => (
-                <button
-                  key={subService.id}
-                  onClick={() => handleMobileNavigation(subService.id)}
-                  className="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:text-yellow-400 hover:bg-gray-700 rounded-md transition-colors border-l-2 border-transparent hover:border-yellow-400" // Enhanced hover styles
-                >
-                  {subService.name}
-                </button>
-              ))}
+          {mobileMenuOpen && (
+            <div className="md:hidden border-t border-yellow-500">
+              <div className="py-4 space-y-2">
+                {services.map((service) => (
+                  <div key={service.id}>
+                    <button
+                      onClick={() => setActiveDropdown(activeDropdown === service.id ? null : service.id)}
+                      className="flex items-center justify-between w-full px-4 py-2 text-left text-white hover:text-yellow-400 hover:bg-gray-700 rounded-md transition-colors"
+                    >
+                      <div className="flex items-center">
+                        <service.icon className="h-4 w-4 mr-2" />
+                        {service.title}
+                      </div>
+                      <ChevronDown className={`h-4 w-4 transition-transform ${activeDropdown === service.id ? 'rotate-180' : ''}`} />
+                    </button>
+                    {activeDropdown === service.id && (
+                      <div className="pl-8 space-y-1">
+                        {service.subServices.map((subService) => (
+                          <button
+                            key={subService.id}
+                            onClick={() => handleMobileNavigation(subService.id)}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-300 hover:text-yellow-400 hover:bg-gray-700 rounded-md transition-colors border-l-2 border-transparent hover:border-yellow-400"
+                          >
+                            {subService.name}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           )}
-        </div>
-      ))}
-    </div>
-  </div>
-)}
         </div>
       </nav>
 
@@ -1145,16 +1127,12 @@ const handleMobileNavigation = (sectionId) => {
             Comprehensive legal solutions for individuals and businesses with over 15+ years of experience
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contactus">
             <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
               Get Consultation
             </button>
-            </Link>
-            <Link to="/services">
             <button className="border-2 border-yellow-500 text-yellow-400 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 hover:text-gray-900 transition-colors">
               View All Services
             </button>
-            </Link>
           </div>
         </div>
       </section>
@@ -1184,21 +1162,12 @@ const handleMobileNavigation = (sectionId) => {
                     </ul>
                   </div>
 
-                  <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                    <div className="bg-yellow-500/10 p-4 rounded-lg border border-yellow-500/30">
-                      <div className="flex items-center mb-2">
-                        <DollarSign className="h-5 w-5 text-yellow-400 mr-2" />
-                        <span className="font-semibold text-yellow-400">Pricing</span>
-                      </div>
-                      <p className="text-white font-semibold">{details.pricing}</p>
+                  <div className="bg-blue-500/10 p-4 rounded-lg border border-blue-500/30 mb-6">
+                    <div className="flex items-center mb-2">
+                      <Clock className="h-5 w-5 text-blue-400 mr-2" />
+                      <span className="font-semibold text-blue-400">Timeline</span>
                     </div>
-                    <div className="bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
-                      <div className="flex items-center mb-2">
-                        <Clock className="h-5 w-5 text-blue-400 mr-2" />
-                        <span className="font-semibold text-blue-400">Timeline</span>
-                      </div>
-                      <p className="text-white font-semibold">{details.timeline}</p>
-                    </div>
+                    <p className="text-white font-semibold">{details.timeline}</p>
                   </div>
                 </div>
 
@@ -1240,9 +1209,6 @@ const handleMobileNavigation = (sectionId) => {
           </section>
         ))}
       </div>
-
-   
-      
     </div>
   );
 };

@@ -74,7 +74,7 @@ const Home = () => {
           <div className="space-y-6 sm:space-y-8">
             {/* Main Quote */}
             <div className="pt-18 space-y-4 sm:space-y-6">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-1xl sm:text-1xl md:text-1xl lg:text-5xl xl:text-5xl font-bold text-white leading-tight">
                 <span className="text-amber-400">"Justice</span> is the constant and 
                 <br className="hidden sm:block" />
                 perpetual will to give each person
