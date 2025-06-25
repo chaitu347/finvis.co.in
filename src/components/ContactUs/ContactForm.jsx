@@ -34,7 +34,7 @@ const ContactForm = () => {
 
     if (!formData.email.trim()) {
       newErrors.email = "Enter your email";
-    } else if (!/^\S+@\S+$/i.test(formData.email)) {
+    } else if (!/^\S+@\S+\.\S+$/i.test(formData.email)) {
       newErrors.email = "Please enter a valid email";
     }
 
@@ -77,23 +77,26 @@ const ContactForm = () => {
     }
 
     setIsSubmitting(true);
+    setMessage("");
 
     try {
       const formDataToSend = new FormData();
       
-      // Add your Web3Forms access key here
+      // Add your Web3Forms access key
       formDataToSend.append("access_key", "e386d127-8d17-40af-a856-e4df27798f9e");
       
       // Add form data
       formDataToSend.append("name", formData.name);
       formDataToSend.append("email", formData.email);
-      formDataToSend.append("phone", formData.phone || "Not provided");
+      formDataToSend.append("phone", formData.phone);
       formDataToSend.append("service", formData.service);
       formDataToSend.append("message", formData.message);
       
-      // Add additional fields for better organization
+      // Add subject
       formDataToSend.append("subject", `New Legal Consultation Request - ${formData.service}`);
-      formDataToSend.append("from_name", formData.name);
+      
+      // Anti-spam honeypot (empty)
+      formDataToSend.append("botcheck", "");
       
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -101,6 +104,8 @@ const ContactForm = () => {
       });
 
       const data = await response.json();
+      
+      console.log("Response:", data); // For debugging
 
       if (data.success) {
         setIsSuccess(true);
@@ -112,7 +117,7 @@ const ContactForm = () => {
 
     } catch (error) {
       setIsSuccess(false);
-      setMessage("Something went wrong. Please try again later.");
+      setMessage(`Error: ${error.message}. Please try again later.`);
       console.error("Form submission error:", error);
     } finally {
       setIsSubmitting(false);
@@ -120,22 +125,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto">
+    <div className="w-full max-w-lg mx-auto p-4">
       <div className="bg-gray-900/95 backdrop-blur-sm border-2 border-amber-400/40 rounded-2xl p-8 shadow-2xl transition-all duration-300 hover:shadow-amber-400/30 hover:shadow-2xl hover:-translate-y-1">
         <div className="space-y-6">
-          {/* Anti-bot honeypot field */}
+          {/* Anti-bot honeypot field - must be hidden and empty */}
           <input
-            type="checkbox"
+            type="text"
             name="botcheck"
             className="hidden"
             style={{ display: "none" }}
             tabIndex="-1"
             autoComplete="off"
           />
-          
-          {/* Web3Forms hidden fields */}
-          <input type="hidden" name="subject" value="New Legal Consultation Request" />
-          <input type="hidden" name="redirect" value="https://web3forms.com/success" />
 
           <div>
             <input
@@ -226,7 +227,7 @@ const ContactForm = () => {
           </div>
 
           <button
-            type="submit"
+            type="button"
             disabled={isSubmitting}
             onClick={handleSubmit}
             className="w-full bg-amber-400 hover:bg-amber-500 text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2"

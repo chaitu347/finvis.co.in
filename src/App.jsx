@@ -13,7 +13,6 @@ import LawyerServicesWebsite from './components/LawyerServicesWebsite.jsx'
 import ScrollToTop from './components/Scrolltotop.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     
