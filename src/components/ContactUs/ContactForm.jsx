@@ -38,7 +38,10 @@ const ContactForm = () => {
       newErrors.email = "Please enter a valid email";
     }
 
-    if (formData.phone.trim() && !/^[\+]?[1-9][\d]{0,15}$/.test(formData.phone.replace(/[\s\-\(\)]/g, ''))) {
+    // Phone is now required
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    } else if (!/^[\+]?[1-9][\d]{0,15}$/.test(formData.phone.replace(/[\s\-\(\)]/g, ''))) {
       newErrors.phone = "Please enter a valid phone number";
     }
 
@@ -144,8 +147,9 @@ const ContactForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Full Name"
+              placeholder="Full Name *"
               autoComplete="name"
+              required
               className={`w-full px-4 py-3 bg-gray-800/80 border-2 ${errors.name ? 'border-red-500' : 'border-gray-600'} rounded-lg outline-none text-white placeholder-gray-400 transition-all duration-200 focus:border-amber-400 focus:shadow-lg focus:shadow-amber-400/20`}
             />
             {errors.name && (
@@ -161,8 +165,9 @@ const ContactForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Email Address"
+              placeholder="Email Address *"
               autoComplete="email"
+              required
               className={`w-full px-4 py-3 bg-gray-800/80 border-2 ${errors.email ? 'border-red-500' : 'border-gray-600'} rounded-lg outline-none text-white placeholder-gray-400 transition-all duration-200 focus:border-amber-400 focus:shadow-lg focus:shadow-amber-400/20`}
             />
             {errors.email && (
@@ -178,8 +183,9 @@ const ContactForm = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="Phone Number (Optional)"
+              placeholder="Phone Number *"
               autoComplete="tel"
+              required
               className={`w-full px-4 py-3 bg-gray-800/80 border-2 ${errors.phone ? 'border-red-500' : 'border-gray-600'} rounded-lg outline-none text-white placeholder-gray-400 transition-all duration-200 focus:border-amber-400 focus:shadow-lg focus:shadow-amber-400/20`}
             />
             {errors.phone && (
@@ -194,9 +200,10 @@ const ContactForm = () => {
               name="service"
               value={formData.service}
               onChange={handleChange}
+              required
               className={`w-full px-4 py-3 bg-gray-800/90 border-2 ${errors.service ? 'border-red-500' : 'border-gray-600'} rounded-lg outline-none text-white transition-all duration-200 focus:border-amber-400 focus:shadow-lg focus:shadow-amber-400/20`}
             >
-              <option value="" className="text-gray-400">Select a Service</option>
+              <option value="" className="text-gray-400">Select a Service *</option>
               {services.map((service, index) => (
                 <option key={index} value={service} className="text-white bg-gray-800">
                   {service}
@@ -215,9 +222,10 @@ const ContactForm = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Your Message"
+              placeholder="Your Message *"
               rows="5"
-              className={`w-full px-4 py-3 bg-gray-800/80 border-2 ${errors.message ? 'border-red-500' : 'border-gray-600'} rounded-lg outline-none text-white placeholder-gray-400 transition-all duration-200 focus:border-amber-400 focus:shadow-lg focus:shadow-amber-400/20 resize-vertical min-h-[120px] max-h-[200px]`}
+              required
+              className={`w-full px-4 py-3 bg-gray-800/80 border-2 ${errors.message ? 'border-red-500' : 'border-gray-600'} rounded-lg outline-none text-white placeholder-gray-400 transition-all duration-200 focus:border-amber-amber focus:shadow-lg focus:shadow-amber-400/20 resize-vertical min-h-[120px] max-h-[200px]`}
             />
             {errors.message && (
               <div className="text-red-400 text-sm mt-1">
