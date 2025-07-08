@@ -13,10 +13,10 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: <Facebook className="w-5 h-5" />, url: '#' },
-    { icon: <Linkedin className="w-5 h-5" />, url: '#' },
+  
     { icon: <Twitter className="w-5 h-5" />, url: '#' },
-    { icon: <Instagram className="w-5 h-5" />, url: '#' },
-    { icon: <Youtube className="w-5 h-5" />, url: '#' }
+    { icon: <Instagram className="w-5 h-5" />, url: 'https://www.instagram.com/_me_varma_?igsh=MW91ZHRvaHd6azI3cg==' },
+    
   ];
 
   return (
@@ -49,6 +49,7 @@ const Footer = () => {
               {quickLinks.map((link, index) => (
                 <a
                   key={index}
+                  
                   href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
                   className="block text-gray-300 hover:text-amber-400 transition-colors duration-300"
                 >
@@ -81,10 +82,15 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
                 <a href="https://maps.google.com/?q=17.4851,78.4056" className="text-gray-300 hover:text-amber-400 transition-colors duration-300">
-                  17.4851° N, 78.4056° E
-                </a>
-                
-              </div>
+               
+                    M.Govardhan Varma<br />
+                    Finvis Associates Law Firm<br />
+                    #39-11-4,Shop No.5,<br />
+                    Turlapati kutumbha Rao Street,<br />
+                    Labbipet<br />
+                    Vijayawada - 520010.
+      </a>
+      </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-amber-400 flex-shrink-0" />
@@ -123,6 +129,7 @@ const Footer = () => {
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
+                  target="_blank"
                   href={social.url}
                   className="bg-gray-800 hover:bg-amber-400 text-gray-300 hover:text-black p-3 rounded-lg transition-all duration-300 transform hover:scale-110"
                 >

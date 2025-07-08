@@ -17,6 +17,7 @@ const ContactForm = () => {
     "Corporate Law",
     "Litigation", 
     "Family Law",
+    "Criminal Defense",
     "Real Estate",
     "Intellectual Property",
     "Tax Law",
@@ -86,7 +87,7 @@ const ContactForm = () => {
       const formDataToSend = new FormData();
       
       // Add your Web3Forms access key
-      formDataToSend.append("access_key", "e386d127-8d17-40af-a856-e4df27798f9e");
+      formDataToSend.append("access_key", "f3a10d60-850f-4a61-af3b-0d66c20c1e04");
       
       // Add form data
       formDataToSend.append("name", formData.name);
@@ -96,7 +97,7 @@ const ContactForm = () => {
       formDataToSend.append("message", formData.message);
       
       // Add subject
-      formDataToSend.append("subject", `New Legal Consultation Request - ${formData.service}`);
+      formDataToSend.append("subject", `New Client Request - ${formData.service}`);
       
       // Anti-spam honeypot (empty)
       formDataToSend.append("botcheck", "");

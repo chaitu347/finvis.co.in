@@ -10,12 +10,8 @@ const SocialMedia = () => {
       url: '#',
       description: 'Legal updates & community discussions'
     },
-    {
-      name: 'LinkedIn',
-      icon: <Linkedin className="w-6 h-6" />,
-      url: '#',
-      description: 'Professional insights & case studies'
-    },
+    
+    
     {
       name: 'Twitter',
       icon: <Twitter className="w-6 h-6" />,
@@ -25,15 +21,10 @@ const SocialMedia = () => {
     {
       name: 'Instagram',
       icon: <Instagram className="w-6 h-6" />,
-      url: '#',
+      url: 'https://www.instagram.com/_me_varma_?igsh=MW91ZHRvaHd6azI3cg==',
       description: 'Behind the scenes & team updates'
     },
-    {
-      name: 'YouTube',
-      icon: <Youtube className="w-6 h-6" />,
-      url: '#',
-      description: 'Legal education & client testimonials'
-    }
+   
   ];
 
   return (
@@ -54,6 +45,7 @@ const SocialMedia = () => {
           {socialPlatforms.map((platform, index) => (
             <a
               key={index}
+              target="_blank"
               href={platform.url}
               className="group bg-gray-800 hover:bg-amber-400 border border-gray-700 hover:border-amber-400 rounded-lg p-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-40 sm:w-48"
             >
