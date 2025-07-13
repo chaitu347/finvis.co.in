@@ -3,9 +3,9 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const MobileContactInfo = () => {
   const contactItems = [
-    { icon: <Mail className="w-5 h-5" />, link: 'mailto:kundrapubhargav@gmail.com' },
-    { icon: <Phone className="w-5 h-5" />, link: 'tel:+919014110638' },
-    { icon: <MapPin className="w-5 h-5" />, link: 'https://maps.google.com/?q=17.4851,78.4056' }
+    { icon: <Mail className="w-5 h-5" />, link: 'mailto:m.govardhanvarma@gmail.com' },
+    { icon: <Phone className="w-5 h-5" />, link: 'tel:+919492605274' },
+    { icon: <MapPin className="w-5 h-5" />, link: 'https://maps.app.goo.gl/YbHi13uBGqEcAyTK9' }
   ];
 
   return (
