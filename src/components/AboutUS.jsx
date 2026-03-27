@@ -47,7 +47,7 @@ const AboutUs = () => {
 
   return (
     <section id="about" className={`py-12 sm:py-16 lg:py-20 transition-colors duration-500 ${themeClasses.background}`}>
-      <Header/>
+      <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Theme Toggle */}
         <div className="flex justify-end mb-8">
@@ -70,7 +70,7 @@ const AboutUs = () => {
             About <span className={themeClasses.accent}>Our Firm</span>
           </h2>
           <p className={`text-lg sm:text-xl ${themeClasses.textSecondary} max-w-3xl mx-auto leading-relaxed px-4`}>
-            With over two decades of legal expertise, we've built our reputation on unwavering commitment 
+            With over two decades of legal expertise, we've built our reputation on unwavering commitment
             to justice, client-focused service, and achieving exceptional results in complex legal matters.
           </p>
         </div>
@@ -83,21 +83,21 @@ const AboutUs = () => {
               Excellence in Legal Representation
             </h3>
             <p className={`text-base sm:text-lg ${themeClasses.textSecondary} leading-relaxed`}>
-              Founded in 1999, Legal Excellence has established itself as a premier law firm dedicated 
-              to providing comprehensive legal services across multiple practice areas. Our team of 
-              experienced attorneys combines deep legal knowledge with innovative strategies to deliver 
+              Founded in 1999, Legal Excellence has established itself as a premier law firm dedicated
+              to providing comprehensive legal services across multiple practice areas. Our team of
+              experienced attorneys combines deep legal knowledge with innovative strategies to deliver
               optimal outcomes for our clients.
             </p>
             <p className={`text-base sm:text-lg ${themeClasses.textSecondary} leading-relaxed`}>
-              We understand that legal challenges can be overwhelming and life-changing. That's why we 
-              approach each case with personalized attention, strategic thinking, and unwavering dedication 
+              We understand that legal challenges can be overwhelming and life-changing. That's why we
+              approach each case with personalized attention, strategic thinking, and unwavering dedication
               to protecting our clients' rights and interests.
             </p>
             <div className="pt-4">
               <Link to="/contactus">
-              <button className={`${themeClasses.button} px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base`}>
-                Schedule Consultation
-              </button>
+                <button className={`${themeClasses.button} px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base`}>
+                  Schedule Consultation
+                </button>
               </Link>
             </div>
           </div>
@@ -108,9 +108,9 @@ const AboutUs = () => {
               <div className="space-y-4 sm:space-y-6">
                 <h4 className="text-xl sm:text-2xl font-bold">Our Mission</h4>
                 <p className="text-base sm:text-lg leading-relaxed">
-                  To provide exceptional legal representation while maintaining the highest standards 
-                  of integrity, professionalism, and client service. We are committed to achieving 
-                  justice for our clients through meticulous preparation, strategic advocacy, and 
+                  To provide exceptional legal representation while maintaining the highest standards
+                  of integrity, professionalism, and client service. We are committed to achieving
+                  justice for our clients through meticulous preparation, strategic advocacy, and
                   unwavering dedication.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
@@ -158,8 +158,8 @@ const AboutUs = () => {
           {lawyers.map((lawyer, index) => (
             <div key={index} className={`${themeClasses.cardBg} rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden`}>
               <div className="relative overflow-hidden">
-                <img 
-                  src={lawyer.image} 
+                <img
+                  src={lawyer.image}
                   alt={lawyer.name}
                   className="w-full h-48 sm:h-64 object-cover transition-transform duration-300 hover:scale-110"
                 />
@@ -182,13 +182,13 @@ const AboutUs = () => {
           <p className={`text-lg sm:text-xl ${themeClasses.ctaSecondary} mb-6 sm:mb-8 max-w-2xl mx-auto px-4`}>
             Get expert legal advice tailored to your specific situation. Our consultation is confidential and comprehensive.
           </p>
-           <div className="pt-4">
-              <Link to="/contactus">
+          <div className="pt-4">
+            <Link to="/contactus">
               <button className={`${themeClasses.button} px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base`}>
                 Schedule Consultation
               </button>
-              </Link>
-            </div>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
