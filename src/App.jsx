@@ -11,6 +11,8 @@ import Header from './components/Header'
 import ContactUs from './components/ContactUs/ContactUs.jsx'
 import LawyerServicesWebsite from './components/LawyerServicesWebsite.jsx'
 import ScrollToTop from './components/Scrolltotop.jsx';
+import PrivacyPolicy from './components/PrivacyPolicy.jsx';
+import TermsAndConditions from './components/TermsAndConditions.jsx';
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/contactus" element={<ContactUs />} />
       <Route path="/services" element={<LawyerServicesWebsite />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
     </Routes>
         
      <Footer/>

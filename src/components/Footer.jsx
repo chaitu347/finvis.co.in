@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const quickLinks = [
@@ -13,10 +13,10 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: <Facebook className="w-5 h-5" />, url: '#' },
-  
+
     { icon: <Twitter className="w-5 h-5" />, url: '#' },
     { icon: <Instagram className="w-5 h-5" />, url: 'https://www.instagram.com/_me_varma_?igsh=MW91ZHRvaHd6azI3cg==' },
-    
+
   ];
 
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
+
           {/* Company Info */}
           <div className="space-y-6">
             <div>
@@ -36,9 +36,9 @@ const Footer = () => {
               </p>
             </div>
             <Link to="/contactus">
-            <button className="bg-amber-400 hover:bg-amber-500 text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
-              Schedule Consultation
-            </button>
+              <button className="bg-amber-400 hover:bg-amber-500 text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                Schedule Consultation
+              </button>
             </Link>
           </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
               {quickLinks.map((link, index) => (
                 <a
                   key={index}
-                  
+
                   href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
                   className="block text-gray-300 hover:text-amber-400 transition-colors duration-300"
                 >
@@ -82,30 +82,30 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
                 <a href="https://maps.google.com/?q=17.4851,78.4056" className="text-gray-300 hover:text-amber-400 transition-colors duration-300">
-               
-                    M.Govardhan Varma<br />
-                    Finvis Associates Law Firm<br />
-                    #39-11-4,Shop No.5,<br />
-                    Turlapati kutumbha Rao Street,<br />
-                    Labbipet<br />
-                    Vijayawada - 520010.
-      </a>
-      </div>
-              
+
+                  M.Govardhan Varma<br />
+                  Finvis Associates Law Firm<br />
+                  #39-11-4,Shop No.5,<br />
+                  Turlapati kutumbha Rao Street,<br />
+                  Labbipet<br />
+                  Vijayawada - 520010.
+                </a>
+              </div>
+
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-amber-400 flex-shrink-0" />
                 <a href="tel:+919492605274" className="text-gray-300 hover:text-amber-400 transition-colors duration-300">
                   +91 94926 05274
                 </a>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-amber-400 flex-shrink-0" />
                 <a href="mailto:m.govardhanvarma@gmail.com" className="text-gray-300 hover:text-amber-400 transition-colors duration-300">
                   m.govardhanvarma@gmail.com
                 </a>
               </div>
-              
+
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-300">
@@ -124,7 +124,7 @@ const Footer = () => {
               <h4 className="text-lg font-semibold text-white mb-2">Follow Us</h4>
               <p className="text-gray-400 text-sm">Stay connected for legal updates and insights</p>
             </div>
-            
+
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
@@ -148,20 +148,15 @@ const Footer = () => {
             <div className="text-gray-400 text-sm text-center md:text-left">
               <p>&copy; 2024 Legal Excellence. All rights reserved.</p>
             </div>
-            
+
             <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">
+              </Link>
+              <Link to="/terms-and-conditions" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">
                 Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">
-                Disclaimer
-              </a>
-              <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors duration-300">
-                Sitemap
-              </a>
+              </Link>
+
             </div>
           </div>
         </div>
