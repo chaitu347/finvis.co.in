@@ -11,7 +11,7 @@ const LawyerServicesWebsite = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -959,81 +959,81 @@ const LawyerServicesWebsite = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white"> 
-      
+    <div className="min-h-screen bg-gray-900 text-white">
+
       {/* Navbar */}
       <nav className="bg-gray-800 border-b border-yellow-500 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex-shrink-0">
-              <Link 
-                                      to="/" 
-                                      
-                                    >
-              <div className="h-10 w-auto sm:h-12 md:h-14 lg:h-16">
-                <svg 
-                  viewBox="0 0 1200 400" 
-                  className="h-full w-auto" 
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="1200" height="400" fill="transparent"/>
-                  
-                  <g transform="translate(80, 60)">
-                    <path 
-                      d="M40 20 C40 20, 40 10, 60 10 L160 10 C180 10, 180 20, 180 20 L180 160 C180 180, 160 200, 140 220 L110 250 L80 220 C60 200, 40 180, 40 160 Z" 
-                      fill="none" 
-                      stroke="#fbbf24" 
-                      strokeWidth="12" 
-                      strokeLinejoin="round"
-                    />
-                    
-                    <g transform="translate(70, 40)">
-                      <rect x="10" y="10" width="60" height="8" fill="#fbbf24" rx="4"/>
-                      <rect x="15" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
-                      <rect x="32" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
-                      <rect x="49" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
-                      <rect x="66" y="25" width="8" height="120" fill="#fbbf24" rx="4"/>
-                      <rect x="10" y="150" width="60" height="12" fill="#fbbf24" rx="4"/>
+              <Link
+                to="/"
+
+              >
+                <div className="h-10 w-auto sm:h-12 md:h-14 lg:h-16">
+                  <svg
+                    viewBox="0 0 1200 400"
+                    className="h-full w-auto"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="1200" height="400" fill="transparent" />
+
+                    <g transform="translate(80, 60)">
+                      <path
+                        d="M40 20 C40 20, 40 10, 60 10 L160 10 C180 10, 180 20, 180 20 L180 160 C180 180, 160 200, 140 220 L110 250 L80 220 C60 200, 40 180, 40 160 Z"
+                        fill="none"
+                        stroke="#fbbf24"
+                        strokeWidth="12"
+                        strokeLinejoin="round"
+                      />
+
+                      <g transform="translate(70, 40)">
+                        <rect x="10" y="10" width="60" height="8" fill="#fbbf24" rx="4" />
+                        <rect x="15" y="25" width="8" height="120" fill="#fbbf24" rx="4" />
+                        <rect x="32" y="25" width="8" height="120" fill="#fbbf24" rx="4" />
+                        <rect x="49" y="25" width="8" height="120" fill="#fbbf24" rx="4" />
+                        <rect x="66" y="25" width="8" height="120" fill="#fbbf24" rx="4" />
+                        <rect x="10" y="150" width="60" height="12" fill="#fbbf24" rx="4" />
+                      </g>
                     </g>
-                  </g>
-                  
-                  <text 
-                    x="320" 
-                    y="180" 
-                    fill="#fbbf24" 
-                    fontSize="120" 
-                    fontWeight="bold" 
-                    fontFamily="Arial, sans-serif" 
-                    letterSpacing="-2px"
-                  >
-                    FINVIS
-                  </text>
-                  
-                  <text 
-                    x="320" 
-                    y="260" 
-                    fill="#fbbf24" 
-                    fontSize="80" 
-                    fontWeight="bold" 
-                    fontFamily="Arial, sans-serif" 
-                    letterSpacing="8px"
-                  >
-                    ASSOCIATES
-                  </text>
-                  
-                  <text 
-                    x="320" 
-                    y="320" 
-                    fill="#fbbf24" 
-                    fontSize="48" 
-                    fontWeight="normal" 
-                    fontFamily="Arial, sans-serif" 
-                    letterSpacing="12px"
-                  >
-                    LAW FIRM
-                  </text>
-                </svg>
-              </div>
+
+                    <text
+                      x="320"
+                      y="180"
+                      fill="#fbbf24"
+                      fontSize="120"
+                      fontWeight="bold"
+                      fontFamily="Arial, sans-serif"
+                      letterSpacing="-2px"
+                    >
+                      GOVARDHAN
+                    </text>
+
+                    <text
+                      x="320"
+                      y="260"
+                      fill="#fbbf24"
+                      fontSize="80"
+                      fontWeight="bold"
+                      fontFamily="Arial, sans-serif"
+                      letterSpacing="8px"
+                    >
+                      VARMA
+                    </text>
+
+                    <text
+                      x="320"
+                      y="320"
+                      fill="#fbbf24"
+                      fontSize="48"
+                      fontWeight="normal"
+                      fontFamily="Arial, sans-serif"
+                      letterSpacing="12px"
+                    >
+                      LAW FIRM
+                    </text>
+                  </svg>
+                </div>
               </Link>
             </div>
 
@@ -1051,7 +1051,7 @@ const LawyerServicesWebsite = () => {
                     {service.title}
                     <ChevronDown className="h-4 w-4 ml-1" />
                   </button>
-                  
+
                   {activeDropdown === service.id && (
                     <div className="absolute top-full left-0 w-64 bg-gray-800 border border-yellow-500 rounded-lg shadow-xl z-50">
                       <div className="py-2 grid grid-cols-1 gap-1">
@@ -1132,16 +1132,16 @@ const LawyerServicesWebsite = () => {
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Comprehensive legal solutions for individuals and businesses with over 15+ years of experience
           </p>
-          <Link 
-                                      to="/contactus" 
-                                      
-                                    >
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
-              Get Consultation
-            </button>
-            
-          </div>
+          <Link
+            to="/contactus"
+
+          >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                Get Consultation
+              </button>
+
+            </div>
           </Link>
         </div>
       </section>
@@ -1155,7 +1155,7 @@ const LawyerServicesWebsite = () => {
                 <div>
                   <h2 className="text-3xl font-bold text-yellow-400 mb-4">{details.title}</h2>
                   <p className="text-gray-300 text-lg mb-6 leading-relaxed">{details.description}</p>
-                  
+
                   <div className="mb-6">
                     <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
                       <CheckCircle className="h-5 w-5 text-yellow-400 mr-2" />
@@ -1178,7 +1178,7 @@ const LawyerServicesWebsite = () => {
                     </div>
                     <p className="text-white font-semibold">{details.timeline}</p>
                   </div>
-                  
+
                 </div>
 
                 <div>
@@ -1212,17 +1212,17 @@ const LawyerServicesWebsite = () => {
                         </li>
                       ))}
                     </ul>
-                  <Link 
-                                      to="/contactus" 
-                                      
-                                    >
-                    <div className="flex flex-col sm:flex-row gap-4 justify-start">
-            <button className="bg-yellow-500 mt-5 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
-              Get Consultation
-            </button>
-            
-          </div>
-          </Link>
+                    <Link
+                      to="/contactus"
+
+                    >
+                      <div className="flex flex-col sm:flex-row gap-4 justify-start">
+                        <button className="bg-yellow-500 mt-5 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                          Get Consultation
+                        </button>
+
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>

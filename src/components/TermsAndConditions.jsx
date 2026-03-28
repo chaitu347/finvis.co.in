@@ -51,14 +51,14 @@ const TermsAndConditions = () => {
           <div className={`space-y-8 ${themeClasses.textSecondary} leading-relaxed`}>
             <div>
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>1. Acceptance of Terms</h2>
-              <p>By accessing or using Finvis Associates’ website (https://finvis.co.in), you agree to comply with and be bound by these Terms & Conditions. If you do not agree, please discontinue use immediately.</p>
+              <p>By accessing or using Govardhan Varma’s website (https://finvis.co.in), you agree to comply with and be bound by these Terms & Conditions. If you do not agree, please discontinue use immediately.</p>
             </div>
 
             <div>
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>2. Legal Information Disclaimer</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>The content provided on this website is for general informational purposes only and does not constitute legal advice.</li>
-                <li>Viewing or using this site does not create an attorney-client relationship with Finvis Associates.</li>
+                <li>Viewing or using this site does not create an attorney-client relationship with Govardhan Varma.</li>
                 <li>For specific legal concerns, you must schedule a consultation with our qualified attorneys.</li>
               </ul>
             </div>
@@ -75,7 +75,7 @@ const TermsAndConditions = () => {
             <div>
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>4. Confidentiality</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>While Finvis Associates takes reasonable steps to ensure secure communications, transmission of information via the internet is not entirely secure.</li>
+                <li>While Govardhan Varma takes reasonable steps to ensure secure communications, transmission of information via the internet is not entirely secure.</li>
                 <li>Do not send confidential or sensitive information through the website forms without prior agreement.</li>
               </ul>
             </div>
@@ -83,7 +83,7 @@ const TermsAndConditions = () => {
             <div>
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>5. Intellectual Property</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>All content, including text, graphics, logos, and design, is the intellectual property of Finvis Associates unless otherwise stated.</li>
+                <li>All content, including text, graphics, logos, and design, is the intellectual property of Govardhan Varma unless otherwise stated.</li>
                 <li>You may not copy, reproduce, or distribute any material without prior written consent.</li>
               </ul>
             </div>
@@ -100,14 +100,14 @@ const TermsAndConditions = () => {
             <div>
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>7. Limitation of Liability</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Finvis Associates is not liable for any damages arising from the use of this website or reliance on its content.</li>
+                <li>Govardhan Varma is not liable for any damages arising from the use of this website or reliance on its content.</li>
                 <li>Outcomes of legal matters depend on multiple factors; no guarantees are made regarding case results.</li>
               </ul>
             </div>
 
             <div>
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>8. Third-Party Links</h2>
-              <p>The website may contain links to external sites. Finvis Associates is not responsible for the accuracy, security, or content of third-party websites.</p>
+              <p>The website may contain links to external sites. Govardhan Varma is not responsible for the accuracy, security, or content of third-party websites.</p>
             </div>
 
             <div>
@@ -129,7 +129,7 @@ const TermsAndConditions = () => {
             <div>
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>11. Amendments</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Finvis Associates reserves the right to update or modify these Terms & Conditions at any time.</li>
+                <li>Govardhan Varma reserves the right to update or modify these Terms & Conditions at any time.</li>
                 <li>Continued use of the website after changes implies acceptance of the revised terms.</li>
               </ul>
             </div>

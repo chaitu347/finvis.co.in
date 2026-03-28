@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                <span className="text-amber-400">Finvisco</span>Associates
+                <span className="text-amber-400">Govardhan</span>varma
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 Providing exceptional legal representation with integrity, dedication, and proven results for over 25 years.
@@ -84,7 +84,7 @@ const Footer = () => {
                 <a href="https://maps.google.com/?q=17.4851,78.4056" className="text-gray-300 hover:text-amber-400 transition-colors duration-300">
 
                   M.Govardhan Varma<br />
-                  Finvis Associates Law Firm<br />
+                  Advocate<br />
                   #39-11-4,Shop No.5,<br />
                   Turlapati kutumbha Rao Street,<br />
                   Labbipet<br />

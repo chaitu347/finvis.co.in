@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
           <div className={`space-y-8 ${themeClasses.textSecondary} leading-relaxed`}>
             <div>
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>1. Introduction</h2>
-              <p>Finvis Associates (“we,” “our,” “us”) values your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you visit https://finvis.co.in or engage with our services.</p>
+              <p>Govardhan Varma (“we,” “our,” “us”) values your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you visit https://finvis.co.in or engage with our services.</p>
             </div>
 
             <div>
@@ -124,7 +124,7 @@ const PrivacyPolicy = () => {
               <h2 className={`text-2xl font-bold ${themeClasses.text} mb-4`}>10. Contact Us</h2>
               <p className="mb-2">For questions or concerns about this Privacy Policy, please contact:</p>
               <div className={`p-4 rounded-lg bg-gray-100 dark:bg-gray-700/50 mt-4`}>
-                <p className="font-semibold mb-1">Finvis Associates</p>
+                <p className="font-semibold mb-1">Govardhan Varma</p>
                 <p>Vijayawada, Andhra Pradesh, India</p>
                 <p className="mt-2">Email: <a href="mailto:m.govardhanvarma@gmail.com" className="text-amber-500 hover:underline">m.govardhanvarma@gmail.com</a></p>
                 <p>Phone: <a href="tel:+919492605274" className="text-amber-500 hover:underline">94926 05274</a></p>
